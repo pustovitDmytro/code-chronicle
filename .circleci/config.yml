@@ -98,7 +98,7 @@ jobs:
       - checkout
       - restore_cache:
           <<: *cache-defaults
-      - run: *fossa-test
+      # - run: *fossa-test
   test-lint:
     <<: *defaults
     steps:
