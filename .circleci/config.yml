@@ -75,7 +75,7 @@ jobs:
       - run: *fossa-install
       - checkout
       - run: *install
-      - run: *security
+      # - run: *security
       - run: *danger-pr
       - run: *fossa-analize
       - save_cache: *cache-modules

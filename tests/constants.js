@@ -6,12 +6,12 @@ const entry = process.env.ENTRY && path.resolve(process.env.ENTRY)
 || path.resolve(__dirname, '../src');
 
 const tmpFolder = path.join(__dirname, '../tmp/tests');
-
-
 const testsRootFolder = __dirname;
+const isTranspiled = isBuild || process.env.ENTRY;
 
 export {
     tmpFolder,
     entry,
-    testsRootFolder
+    testsRootFolder,
+    isTranspiled
 };

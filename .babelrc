@@ -10,6 +10,7 @@
       ]
     ],
     "plugins": [
+      "shebang",
       [
         "@babel/plugin-proposal-decorators",
         {
@@ -19,9 +20,9 @@
       [
         "module-resolver",
         {
-          "root": ["./src"],
           "alias": {
             "tests": "./tests",
+            "src": "./src/",
             "package": "./package.json"
           }
         }

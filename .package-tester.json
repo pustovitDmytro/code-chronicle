@@ -1,4 +1,5 @@
 {
     "dir": "tmp/package-tests",
+    "copy": [["examples", "examples"]],
     "copyDefaultFiles": true
 }

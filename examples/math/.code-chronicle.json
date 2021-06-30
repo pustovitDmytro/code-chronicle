@@ -1,0 +1,15 @@
+{
+    "descriptions": {
+        "math": "math helpers"
+    },
+    "examples": {
+        "tmpPath": "math_examples.json",
+        "templatePath": "templates/examples.handlebars",
+        "eslint": true
+    },
+    "info": {
+        "name": "math",
+        "description": "Shows usage of code-chronicle package"
+    },
+    "entry": [ "src/index.js" ]
+}
