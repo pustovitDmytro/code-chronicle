@@ -1,3 +1,14 @@
+## [1.0.1](https://github.com/pustovitDmytro/code-chronicle/compare/v1.0.0...v1.0.1) (2021-07-01)
+
+
+### Chore
+
+* Lock file maintenance ([d2192c0](https://github.com/pustovitDmytro/code-chronicle/commit/d2192c0a8f9339060d6f803aaaa09151a06a1efe))
+
+### Upgrade
+
+* Pin dependencies ([83131b5](https://github.com/pustovitDmytro/code-chronicle/commit/83131b54146f50dd997a122f1f4241a6bc927f82))
+
 # 1.0.0 (2021-06-30)
 
 
