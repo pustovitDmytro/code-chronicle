@@ -1,3 +1,18 @@
+## [1.0.2](https://github.com/pustovitDmytro/code-chronicle/compare/v1.0.1...v1.0.2) (2021-07-08)
+
+
+### Chore
+
+* (refactor) drop unused function ([42ad550](https://github.com/pustovitDmytro/code-chronicle/commit/42ad5506b5a6536138a1deff4d196e97a4e55580))
+* Lock file maintenance ([cdf4f11](https://github.com/pustovitDmytro/code-chronicle/commit/cdf4f112eebab895c624210cc672ab00ba2fa443))
+* Update dependency eslint-plugin-regexp to ^0.13.0 ([ea343dc](https://github.com/pustovitDmytro/code-chronicle/commit/ea343dc305d72b6e76d4612d5980c4586e6cf4eb))
+* Update dependency eslint-plugin-unicorn to v34 (#6) ([bf19ccf](https://github.com/pustovitDmytro/code-chronicle/commit/bf19ccfc031904236f49933ce3bdcc86b88fce3d)), closes [#6](https://github.com/pustovitDmytro/code-chronicle/issues/6)
+* Update dependency husky to v7 ([f954f6a](https://github.com/pustovitDmytro/code-chronicle/commit/f954f6a754189d802817bd4a82198cb5ba671865))
+
+### Fix
+
+* fixes documentation dependency problems (closes #2) ([2c226ed](https://github.com/pustovitDmytro/code-chronicle/commit/2c226ed4f2292124027b0114074db0f3352b0f43)), closes [#2](https://github.com/pustovitDmytro/code-chronicle/issues/2)
+
 ## [1.0.1](https://github.com/pustovitDmytro/code-chronicle/compare/v1.0.0...v1.0.1) (2021-07-01)
 
 
