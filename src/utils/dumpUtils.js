@@ -1,9 +1,5 @@
 import { uniqueIdenticFilter, flatten } from 'myrmidon';
 
-export function dumpDescription(d) {
-    return d ? d.children[0].children[0].value : '';
-}
-
 export function dumpParam(p) {
     if (!p?.type) return null;
 
