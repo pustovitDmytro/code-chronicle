@@ -24,7 +24,6 @@ calculate facorial of the number
 
 **Parameters**
 
-    - `` **** 
     - `num` **number** 
 
 **Returns**
@@ -51,7 +50,6 @@ calculate Fibonacci Sequence
 
 **Parameters**
 
-    - `` **** 
     - `num` **number** 
 
 **Returns**

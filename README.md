@@ -47,9 +47,7 @@ To install the library run the following command
 
 ## Usage
 
-```javascript
-
-```
+See ready example at [math folder](examples/math/README.md).
 
 ## Contribute
 

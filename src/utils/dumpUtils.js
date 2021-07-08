@@ -1,4 +1,3 @@
-import path from 'path';
 import { uniqueIdenticFilter, flatten } from 'myrmidon';
 
 export function dumpDescription(d) {
@@ -6,26 +5,29 @@ export function dumpDescription(d) {
 }
 
 export function dumpParam(p) {
-    if (!p.type) return null;
+    if (!p?.type) return null;
 
     return {
         name        : p.name,
         type        : p.type.name,
-        description : dumpDescription(p.description)
+        description : p.description
     };
 }
 
-export function dumpDoc(d) {
+
+export function dumpDoc(d, { file }) {
     return {
         name        : d.name,
-        type        : d.kind,
+        type        : d.type,
         comment     : d.comment,
-        description : dumpDescription(d.description),
+        description : d.description,
 
-        params  : d.params.map((element) => dumpParam(element)),
-        returns : d.returns[0] && dumpParam(d.returns[0]),
+        params : d.tags
+            .filter(t => t.title === 'param')
+            .map((el) => dumpParam(el)),
+        returns : dumpParam(d.tags.find(t => t.title === 'returns')),
 
-        file     : path.relative(process.cwd(), d.context.file).trim(),
+        file,
         position : d.loc.start.line
     };
 }

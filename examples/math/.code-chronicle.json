@@ -11,5 +11,5 @@
         "name": "math",
         "description": "Shows usage of code-chronicle package"
     },
-    "entry": [ "src/index.js" ]
+    "entry": [ "src/*.js" ]
 }
