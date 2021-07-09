@@ -5,21 +5,20 @@ import { CLIEngine } from 'eslint';
 import recommended from 'remark-preset-lint-recommended';
 import remark from 'remark';
 import toc from 'remark-toc';
-import { groupBy, isArray, isObject, flatten, getProp } from 'myrmidon';
+import { groupBy, isArray, isObject, flatten } from 'myrmidon';
 import doctrine from 'doctrine';
 import { parse } from '@babel/parser';
 import globby from 'globby';
 import { getTemplate } from './handlebars';
 import { dumpTest, dumpDoc, getFiles, getGitCommit, safeReadJSON } from './utils';
 
-const astParsable = {
-    ExportNamedDeclaration : {
-        type : 'function',
-        name : 'declaration.id.name'
-    }
-};
-
+const astParsable = new Set([ 'ExportNamedDeclaration' ]);
 const techCommentPatterns = [ 'TODO:', 'eslint-disable' ];
+
+const TYPES = {
+    FunctionDeclaration : 'function',
+    VariableDeclaration : 'const'
+};
 
 function extractJSDOC(ast) {
     if (isArray(ast)) return flatten(ast.map(a => extractJSDOC(a)));
@@ -27,9 +26,9 @@ function extractJSDOC(ast) {
 
     const { type, start, end, loc, leadingComments, ...rest } = ast;
 
-    if (Object.keys(astParsable).includes(type) && leadingComments) {
-        const conf = astParsable[type];
-
+    if (astParsable.has(type) && leadingComments) {
+        const { declaration } = rest;
+        const name = declaration.id?.name || declaration.declarations?.[0]?.id?.name;
 
         return leadingComments.map(astComment => {
             const jsdoc = doctrine.parse(astComment.value, {
@@ -43,8 +42,8 @@ function extractJSDOC(ast) {
             if (isNotJSDoc) return null;
 
             return {
-                type : conf.type,
-                name : getProp(rest, conf.name),
+                type : TYPES[declaration.type],
+                name,
 
                 start,
                 end,
