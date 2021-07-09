@@ -6,7 +6,7 @@ HandleBars.registerHelper('join', (items = [], sep = ' ') => {
 });
 
 HandleBars.registerHelper('lowercase', str => {
-    return str.toLowerCase();
+    return str ? str.toLowerCase() : '';
 });
 
 HandleBars.registerHelper('is', function (value, test, options) {
