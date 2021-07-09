@@ -19,6 +19,8 @@ const astParsable = {
     }
 };
 
+const techCommentPatterns = [ 'TODO:', 'eslint-disable' ];
+
 function extractJSDOC(ast) {
     if (isArray(ast)) return flatten(ast.map(a => extractJSDOC(a)));
     if (!isObject(ast)) return [];
@@ -29,20 +31,28 @@ function extractJSDOC(ast) {
         const conf = astParsable[type];
 
 
-        return leadingComments.map(astComment => ({
-            type : conf.type,
-            name : getProp(rest, conf.name),
-
-            start,
-            end,
-            loc,
-
-            ...doctrine.parse(astComment.value, {
+        return leadingComments.map(astComment => {
+            const jsdoc = doctrine.parse(astComment.value, {
                 unwrap      : true, // have doctrine itself remove the comment asterisks from content
                 sloppy      : true, // enable parsing of optional parameters in brackets, JSDoc3 style
                 lineNumbers : true
-            })
-        }));
+            });
+            const isNotJSDoc = (jsdoc.tags.length === 0)
+            && techCommentPatterns.some(i => jsdoc.description.includes(i));
+
+            if (isNotJSDoc) return null;
+
+            return {
+                type : conf.type,
+                name : getProp(rest, conf.name),
+
+                start,
+                end,
+                loc,
+
+                ...jsdoc
+            };
+        }).filter(i => i);
     }
 
     return flatten(
