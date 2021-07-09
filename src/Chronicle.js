@@ -10,7 +10,7 @@ import doctrine from 'doctrine';
 import { parse } from '@babel/parser';
 import globby from 'globby';
 import { getTemplate } from './handlebars';
-import { dumpTest, dumpDoc, getFiles, getGitCommit } from './utils';
+import { dumpTest, dumpDoc, getFiles, getGitCommit, safeReadJSON } from './utils';
 
 const astParsable = {
     ExportNamedDeclaration : {
@@ -62,9 +62,15 @@ export default class Chronicle {
         };
 
         this.descriptions = {};
-        this.info = info;
         this.entry = entry.map(p => path.resolve(this.root, p));
         this.tests = path.resolve(this.root, 'tests');
+        this._ready = this.init(info);
+    }
+
+    async init(info) {
+        this.info = info || await safeReadJSON(
+            path.join(this.root, 'package.json')
+        );
     }
 
     async prepareExamples() {

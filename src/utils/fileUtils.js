@@ -13,3 +13,11 @@ export async function getFiles(dir) {
 
     return flatten(files);
 }
+
+export async function safeReadJSON(filePath, defaults = {}) {
+    try {
+        return await fs.readJSON(filePath);
+    } catch {
+        return defaults;
+    }
+}

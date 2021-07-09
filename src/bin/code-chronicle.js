@@ -21,6 +21,7 @@ Options:
 async function build({ config, from, to, root }) {
     const chr = new Chronicle({ root, ...config });
 
+    await chr._ready;
     await chr.build(from, to);
     console.log(`written to ${to}`);
 }
