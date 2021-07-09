@@ -75,7 +75,7 @@ jobs:
       - run: *fossa-install
       - checkout
       - run: *install
-      # - run: *security
+      - run: *security
       - run: *danger-pr
       - run: *fossa-analize
       - save_cache: *cache-modules
@@ -98,7 +98,7 @@ jobs:
       - checkout
       - restore_cache:
           <<: *cache-defaults
-      # - run: *fossa-test
+      - run: *fossa-test
   test-lint:
     <<: *defaults
     steps:
