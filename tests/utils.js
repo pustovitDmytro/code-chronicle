@@ -1,5 +1,9 @@
 import path from 'path';
+import { promisify } from 'util';
+import { exec } from 'child_process';
 import { entry } from './constants';
+
+const execAsync = promisify(exec);
 
 export function load(relPath, clearCache) {
     const absPath = path.resolve(entry, relPath);
@@ -15,4 +19,24 @@ export function load(relPath, clearCache) {
 
 export function resolve(relPath) {
     return require.resolve(path.join(entry, relPath));
+}
+
+
+export async function CLITester(command, args = {}) {
+    try {
+        const execArgs = {
+            shell : true,
+            ...args
+        };
+
+        const { stdout } = await execAsync(command.join(' '), execArgs);
+
+        console.log(stdout);
+
+        return stdout;
+    } catch (error) {
+        console.log(error.stdout);
+        console.error(error);
+        throw error;
+    }
 }

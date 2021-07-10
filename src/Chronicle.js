@@ -99,7 +99,7 @@ export default class Chronicle {
             });
     }
 
-    async build(entry, out) {
+    async build(templatePath, out) {
         const paths = await globby(this.entry);
         const docs = [];
 
@@ -147,7 +147,7 @@ export default class Chronicle {
                 };
             });
 
-        const template = getTemplate(entry);
+        const template = getTemplate(templatePath);
         const commit = await getGitCommit(this.root);
         const markdown =  template({
             info : this.info,

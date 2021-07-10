@@ -1,0 +1,7 @@
+{
+    "examples": {
+        "tmpPath": "examples.empty.json",
+        "templatePath": "templates/1.md" 
+    },
+    "entry": [ "src/*.js" ]
+}
