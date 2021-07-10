@@ -1,4 +1,3 @@
-// getFiles
 import path from 'path';
 import { assert } from 'chai';
 import { load } from '../utils';
