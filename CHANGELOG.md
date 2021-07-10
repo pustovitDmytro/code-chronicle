@@ -1,3 +1,26 @@
+# [1.1.0](https://github.com/pustovitDmytro/code-chronicle/compare/v1.0.2...v1.1.0) (2021-07-10)
+
+
+### Chore
+
+* (ci) return deps check ([c5a632b](https://github.com/pustovitDmytro/code-chronicle/commit/c5a632b70752b5694eaae9ef2744c0e36b89090b))
+* adds unit tests for fileUtils ([5fcbfed](https://github.com/pustovitDmytro/code-chronicle/commit/5fcbfed2d2ead15005c5bf7723c05d7f89bad4c7))
+* adds unit tests for gitUtils ([08a29f5](https://github.com/pustovitDmytro/code-chronicle/commit/08a29f55bc2446e7d14d3c9a1cccb27cfeccc7ea))
+* adds unit tests for SnippetTester ([d499edd](https://github.com/pustovitDmytro/code-chronicle/commit/d499edd33a1163cd7b830443635e2c81dfe41370))
+* fixes lint ([124fd58](https://github.com/pustovitDmytro/code-chronicle/commit/124fd589d9bceb31d959f5e5e9bb3b5af2c76db6))
+* Update dependency eslint-plugin-sonarjs to ^0.9.0 ([9acdebe](https://github.com/pustovitDmytro/code-chronicle/commit/9acdebe4d072669307bf85465c224509990f6e8f))
+
+### Fix
+
+* allow empty input to lowercase handlebars helper ([4d929b9](https://github.com/pustovitDmytro/code-chronicle/commit/4d929b993a566976c33c32a55dccecbfeaa05685))
+
+### New
+
+* adds constants to documentable ([ad085df](https://github.com/pustovitDmytro/code-chronicle/commit/ad085df5c36a37347933e6ddac5ec786894091d3))
+* allow errors in snippet tests ([9ba74ac](https://github.com/pustovitDmytro/code-chronicle/commit/9ba74ac9232fe24e2c3567e3ed6f6b72af62214f))
+* ignore technical comments from beign documented ([242248d](https://github.com/pustovitDmytro/code-chronicle/commit/242248da21c1ab694bf7419fc67d42100a422c06))
+* read info from root package-json if not specified in config ([bd72836](https://github.com/pustovitDmytro/code-chronicle/commit/bd728363e68844483c789495c535721a6e0424aa))
+
 ## [1.0.2](https://github.com/pustovitDmytro/code-chronicle/compare/v1.0.1...v1.0.2) (2021-07-08)
 
 
