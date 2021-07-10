@@ -7,9 +7,12 @@ export default class SnippetTester {
         this.args = args;
     }
 
-    test = async (func, expected) => {
+    test = async (func, expected, args = []) => {
         try {
-            const result = await func(...this.args);
+            const result = await func(
+                ...this.args,
+                ...args
+            );
 
             if (expected) this.tester(result, expected);
 
