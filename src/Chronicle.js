@@ -5,61 +5,11 @@ import { CLIEngine } from 'eslint';
 import recommended from 'remark-preset-lint-recommended';
 import remark from 'remark';
 import toc from 'remark-toc';
-import { groupBy, isArray, isObject, flatten } from 'myrmidon';
-import doctrine from 'doctrine';
+import { groupBy } from 'myrmidon';
 import { parse } from '@babel/parser';
 import globby from 'globby';
 import { getTemplate } from './handlebars';
-import { dumpTest, dumpDoc, getFiles, getGitCommit, safeReadJSON } from './utils';
-
-const astParsable = new Set([ 'ExportNamedDeclaration' ]);
-const techCommentPatterns = [ 'TODO:', 'eslint-disable' ];
-
-const TYPES = {
-    FunctionDeclaration : 'function',
-    VariableDeclaration : 'const'
-};
-
-function extractJSDOC(ast) {
-    if (isArray(ast)) return flatten(ast.map(a => extractJSDOC(a)));
-    if (!isObject(ast)) return [];
-
-    const { type, start, end, loc, leadingComments, ...rest } = ast;
-
-    if (astParsable.has(type) && leadingComments) {
-        const { declaration } = rest;
-        const name = declaration.id?.name || declaration.declarations?.[0]?.id?.name;
-
-        return leadingComments.map(astComment => {
-            const jsdoc = doctrine.parse(astComment.value, {
-                unwrap      : true, // have doctrine itself remove the comment asterisks from content
-                sloppy      : true, // enable parsing of optional parameters in brackets, JSDoc3 style
-                lineNumbers : true
-            });
-            const isNotJSDoc = (jsdoc.tags.length === 0)
-            && techCommentPatterns.some(i => jsdoc.description.includes(i));
-
-            if (isNotJSDoc) return null;
-
-            return {
-                type : TYPES[declaration.type],
-                name,
-
-                start,
-                end,
-                loc,
-
-                ...jsdoc
-            };
-        }).filter(i => i);
-    }
-
-    return flatten(
-        Object.values(rest).map(item => {
-            return extractJSDOC(item);
-        })
-    );
-}
+import { dumpTest, dumpDoc, getFiles, getGitCommit, safeReadJSON, extractJSDOC } from './utils';
 
 export default class Chronicle {
     constructor({ info, examples, root, entry }) {

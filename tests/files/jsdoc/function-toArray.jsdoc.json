@@ -1,0 +1,40 @@
+[
+    {
+        "type": "function",
+        "name": "toArray",
+        "start": 243,
+        "end": 361,
+        "loc": {
+            "start": {
+                "line": 8,
+                "column": 0
+            },
+            "end": {
+                "line": 12,
+                "column": 1
+            }
+        },
+        "description": "transforms any value to Array",
+        "tags": [
+            {
+                "title": "param",
+                "description": "any array or primitive for examination",
+                "lineNumber": 2,
+                "type": {
+                    "type": "NameExpression",
+                    "name": "any"
+                },
+                "name": "value"
+            },
+            {
+                "title": "returns",
+                "description": "[] if no value passed, value if it is Array and \\[value] in other cases",
+                "lineNumber": 3,
+                "type": {
+                    "type": "NameExpression",
+                    "name": "array"
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,87 @@
+[
+    {
+        "type": "function",
+        "name": "fill",
+        "start": 3591,
+        "end": 4175,
+        "loc": {
+            "start": {
+                "line": 107,
+                "column": 0
+            },
+            "end": {
+                "line": 126,
+                "column": 1
+            }
+        },
+        "description": "Fills string template with specified data",
+        "tags": [
+            {
+                "title": "param",
+                "description": "string template",
+                "lineNumber": 2,
+                "type": {
+                    "type": "NameExpression",
+                    "name": "string"
+                },
+                "name": "template"
+            },
+            {
+                "title": "param",
+                "description": "input data",
+                "lineNumber": 3,
+                "type": {
+                    "type": "NameExpression",
+                    "name": "object"
+                },
+                "name": "data"
+            },
+            {
+                "title": "param",
+                "description": "method configuration",
+                "lineNumber": 4,
+                "type": {
+                    "type": "NameExpression",
+                    "name": "object"
+                },
+                "name": "settings"
+            },
+            {
+                "title": "param",
+                "description": "literal delimiter flags",
+                "lineNumber": 5,
+                "type": {
+                    "type": "OptionalType",
+                    "expression": {
+                        "type": "NameExpression",
+                        "name": "array"
+                    }
+                },
+                "name": "settings.delimiters",
+                "default": "['{','}']"
+            },
+            {
+                "title": "param",
+                "description": "regexp to parse template (replaces full match with groups)",
+                "lineNumber": 6,
+                "type": {
+                    "type": "OptionalType",
+                    "expression": {
+                        "type": "NameExpression",
+                        "name": "regExp"
+                    }
+                },
+                "name": "settings.regExp"
+            },
+            {
+                "title": "returns",
+                "description": "filled template",
+                "lineNumber": 7,
+                "type": {
+                    "type": "NameExpression",
+                    "name": "string"
+                }
+            }
+        ]
+    }
+]

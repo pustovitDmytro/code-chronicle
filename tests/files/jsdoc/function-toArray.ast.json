@@ -1,0 +1,371 @@
+{
+    "type": "ExportNamedDeclaration",
+    "start": 243,
+    "end": 361,
+    "loc": {
+        "start": {
+            "line": 8,
+            "column": 0
+        },
+        "end": {
+            "line": 12,
+            "column": 1
+        }
+    },
+    "leadingComments": [
+        {
+            "type": "CommentBlock",
+            "value": "*\n * transforms any value to Array\n * @param {any} value any array or primitive for examination\n * @returns {array} [] if no value passed, value if it is Array and \\[value] in other cases\n ",
+            "start": 49,
+            "end": 242,
+            "loc": {
+                "start": {
+                    "line": 3,
+                    "column": 0
+                },
+                "end": {
+                    "line": 7,
+                    "column": 3
+                }
+            }
+        }
+    ],
+    "trailingComments": [
+        {
+            "type": "CommentBlock",
+            "value": "*\n * generates filter function, that leaves only unique items\n * @param {function} isEqual equality function which receives 2 elements to compare, should return true if elements are equal\n * @returns {function} filter function, that leaves only unique items\n ",
+            "start": 363,
+            "end": 626,
+            "loc": {
+                "start": {
+                    "line": 14,
+                    "column": 0
+                },
+                "end": {
+                    "line": 18,
+                    "column": 3
+                }
+            }
+        }
+    ],
+    "specifiers": [],
+    "source": null,
+    "declaration": {
+        "type": "FunctionDeclaration",
+        "start": 250,
+        "end": 361,
+        "loc": {
+            "start": {
+                "line": 8,
+                "column": 7
+            },
+            "end": {
+                "line": 12,
+                "column": 1
+            }
+        },
+        "id": {
+            "type": "Identifier",
+            "start": 259,
+            "end": 266,
+            "loc": {
+                "start": {
+                    "line": 8,
+                    "column": 16
+                },
+                "end": {
+                    "line": 8,
+                    "column": 23
+                },
+                "identifierName": "toArray"
+            },
+            "name": "toArray"
+        },
+        "generator": false,
+        "async": false,
+        "params": [
+            {
+                "type": "Identifier",
+                "start": 267,
+                "end": 272,
+                "loc": {
+                    "start": {
+                        "line": 8,
+                        "column": 24
+                    },
+                    "end": {
+                        "line": 8,
+                        "column": 29
+                    },
+                    "identifierName": "value"
+                },
+                "name": "value"
+            }
+        ],
+        "body": {
+            "type": "BlockStatement",
+            "start": 274,
+            "end": 361,
+            "loc": {
+                "start": {
+                    "line": 8,
+                    "column": 31
+                },
+                "end": {
+                    "line": 12,
+                    "column": 1
+                }
+            },
+            "body": [
+                {
+                    "type": "IfStatement",
+                    "start": 280,
+                    "end": 311,
+                    "loc": {
+                        "start": {
+                            "line": 9,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 9,
+                            "column": 35
+                        }
+                    },
+                    "test": {
+                        "type": "UnaryExpression",
+                        "start": 284,
+                        "end": 299,
+                        "loc": {
+                            "start": {
+                                "line": 9,
+                                "column": 8
+                            },
+                            "end": {
+                                "line": 9,
+                                "column": 23
+                            }
+                        },
+                        "operator": "!",
+                        "prefix": true,
+                        "argument": {
+                            "type": "CallExpression",
+                            "start": 285,
+                            "end": 299,
+                            "loc": {
+                                "start": {
+                                    "line": 9,
+                                    "column": 9
+                                },
+                                "end": {
+                                    "line": 9,
+                                    "column": 23
+                                }
+                            },
+                            "callee": {
+                                "type": "Identifier",
+                                "start": 285,
+                                "end": 292,
+                                "loc": {
+                                    "start": {
+                                        "line": 9,
+                                        "column": 9
+                                    },
+                                    "end": {
+                                        "line": 9,
+                                        "column": 16
+                                    },
+                                    "identifierName": "isValue"
+                                },
+                                "name": "isValue"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "start": 293,
+                                    "end": 298,
+                                    "loc": {
+                                        "start": {
+                                            "line": 9,
+                                            "column": 17
+                                        },
+                                        "end": {
+                                            "line": 9,
+                                            "column": 22
+                                        },
+                                        "identifierName": "value"
+                                    },
+                                    "name": "value"
+                                }
+                            ]
+                        }
+                    },
+                    "consequent": {
+                        "type": "ReturnStatement",
+                        "start": 301,
+                        "end": 311,
+                        "loc": {
+                            "start": {
+                                "line": 9,
+                                "column": 25
+                            },
+                            "end": {
+                                "line": 9,
+                                "column": 35
+                            }
+                        },
+                        "argument": {
+                            "type": "ArrayExpression",
+                            "start": 308,
+                            "end": 310,
+                            "loc": {
+                                "start": {
+                                    "line": 9,
+                                    "column": 32
+                                },
+                                "end": {
+                                    "line": 9,
+                                    "column": 34
+                                }
+                            },
+                            "elements": []
+                        }
+                    },
+                    "alternate": null
+                },
+                {
+                    "type": "ReturnStatement",
+                    "start": 317,
+                    "end": 359,
+                    "loc": {
+                        "start": {
+                            "line": 11,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 11,
+                            "column": 46
+                        }
+                    },
+                    "argument": {
+                        "type": "ConditionalExpression",
+                        "start": 324,
+                        "end": 358,
+                        "loc": {
+                            "start": {
+                                "line": 11,
+                                "column": 11
+                            },
+                            "end": {
+                                "line": 11,
+                                "column": 45
+                            }
+                        },
+                        "test": {
+                            "type": "CallExpression",
+                            "start": 324,
+                            "end": 338,
+                            "loc": {
+                                "start": {
+                                    "line": 11,
+                                    "column": 11
+                                },
+                                "end": {
+                                    "line": 11,
+                                    "column": 25
+                                }
+                            },
+                            "callee": {
+                                "type": "Identifier",
+                                "start": 324,
+                                "end": 331,
+                                "loc": {
+                                    "start": {
+                                        "line": 11,
+                                        "column": 11
+                                    },
+                                    "end": {
+                                        "line": 11,
+                                        "column": 18
+                                    },
+                                    "identifierName": "isArray"
+                                },
+                                "name": "isArray"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "start": 332,
+                                    "end": 337,
+                                    "loc": {
+                                        "start": {
+                                            "line": 11,
+                                            "column": 19
+                                        },
+                                        "end": {
+                                            "line": 11,
+                                            "column": 24
+                                        },
+                                        "identifierName": "value"
+                                    },
+                                    "name": "value"
+                                }
+                            ]
+                        },
+                        "consequent": {
+                            "type": "Identifier",
+                            "start": 341,
+                            "end": 346,
+                            "loc": {
+                                "start": {
+                                    "line": 11,
+                                    "column": 28
+                                },
+                                "end": {
+                                    "line": 11,
+                                    "column": 33
+                                },
+                                "identifierName": "value"
+                            },
+                            "name": "value"
+                        },
+                        "alternate": {
+                            "type": "ArrayExpression",
+                            "start": 349,
+                            "end": 358,
+                            "loc": {
+                                "start": {
+                                    "line": 11,
+                                    "column": 36
+                                },
+                                "end": {
+                                    "line": 11,
+                                    "column": 45
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "type": "Identifier",
+                                    "start": 351,
+                                    "end": 356,
+                                    "loc": {
+                                        "start": {
+                                            "line": 11,
+                                            "column": 38
+                                        },
+                                        "end": {
+                                            "line": 11,
+                                            "column": 43
+                                        },
+                                        "identifierName": "value"
+                                    },
+                                    "name": "value"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "directives": []
+        }
+    }
+}

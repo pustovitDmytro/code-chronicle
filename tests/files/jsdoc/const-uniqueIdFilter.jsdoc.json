@@ -1,0 +1,37 @@
+[
+    {
+        "type": "const",
+        "name": "uniqueIdenticFilter",
+        "start": 1191,
+        "end": 1258,
+        "loc": {
+            "start": {
+                "line": 41,
+                "column": 0
+            },
+            "end": {
+                "line": 41,
+                "column": 67
+            }
+        },
+        "description": "filter function, that leaves only identicly unique items (same by ===)",
+        "tags": [
+            {
+                "title": "constant",
+                "description": null,
+                "lineNumber": 2,
+                "type": null,
+                "name": null
+            },
+            {
+                "title": "type",
+                "description": null,
+                "lineNumber": 3,
+                "type": {
+                    "type": "NameExpression",
+                    "name": "function"
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,99 @@
+{
+    "type": "BinaryExpression",
+    "start": 695,
+    "end": 712,
+    "loc": {
+        "start": {
+            "line": 33,
+            "column": 17
+        },
+        "end": {
+            "line": 33,
+            "column": 34
+        }
+    },
+    "left": {
+        "type": "CallExpression",
+        "start": 695,
+        "end": 705,
+        "loc": {
+            "start": {
+                "line": 33,
+                "column": 17
+            },
+            "end": {
+                "line": 33,
+                "column": 27
+            }
+        },
+        "callee": {
+            "type": "MemberExpression",
+            "start": 695,
+            "end": 703,
+            "loc": {
+                "start": {
+                    "line": 33,
+                    "column": 17
+                },
+                "end": {
+                    "line": 33,
+                    "column": 25
+                }
+            },
+            "object": {
+                "type": "Identifier",
+                "start": 695,
+                "end": 699,
+                "loc": {
+                    "start": {
+                        "line": 33,
+                        "column": 17
+                    },
+                    "end": {
+                        "line": 33,
+                        "column": 21
+                    },
+                    "identifierName": "Date"
+                },
+                "name": "Date"
+            },
+            "computed": false,
+            "property": {
+                "type": "Identifier",
+                "start": 700,
+                "end": 703,
+                "loc": {
+                    "start": {
+                        "line": 33,
+                        "column": 22
+                    },
+                    "end": {
+                        "line": 33,
+                        "column": 25
+                    },
+                    "identifierName": "now"
+                },
+                "name": "now"
+            }
+        },
+        "arguments": []
+    },
+    "operator": "-",
+    "right": {
+        "type": "Identifier",
+        "start": 708,
+        "end": 712,
+        "loc": {
+            "start": {
+                "line": 33,
+                "column": 30
+            },
+            "end": {
+                "line": 33,
+                "column": 34
+            },
+            "identifierName": "time"
+        },
+        "name": "time"
+    }
+}

@@ -3,13 +3,17 @@ import { assert } from 'chai';
 import fs from 'fs-extra';
 import { load } from '../utils';
 import { testsRootFolder, tmpFolder } from '../constants';
+import Test from '../Test';
 
 const { getGitCommit } = load('utils/gitUtils');
+const factory = new Test();
 const tmpRepoDir = path.join(tmpFolder, 'repo');
 
 suite('gitUtils');
 
 before(async function () {
+    await factory.setTmpFolder();
+
     await fs.copy(
         path.join(testsRootFolder, 'files/repository'),
         tmpRepoDir
@@ -29,5 +33,6 @@ test('Positive: getGitCommit', async function () {
 });
 
 after(async function () {
+    await factory.cleanTmpFolder();
     await fs.remove(tmpRepoDir);
 });

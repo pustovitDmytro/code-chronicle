@@ -1,13 +1,19 @@
 import path from 'path';
 import fs from 'fs-extra';
 import { assert } from 'chai';
+import Test from '../Test';
 import { testsRootFolder, tmpFolder, isTranspiled } from '../constants';
 import { resolve, CLITester } from '../utils';
 
+const factory = new Test();
 const filesFolder = path.resolve(testsRootFolder, 'files');
 const binPath = resolve('bin/code-chronicle.js');
 
 suite('cli: code-chronicle');
+
+before(async function () {
+    await factory.setTmpFolder();
+});
 
 test('Positive: run cli on folder', async function () {
     const configPath = path.join(filesFolder, 'config.sample.json');
@@ -45,4 +51,8 @@ test('Negative: config not exists', async function () {
         assert.include(error.message, 'ENOENT: no such file or directory');
         assert.include(error.message, configPath);
     }
+});
+
+after(async function () {
+    await factory.cleanTmpFolder();
 });
