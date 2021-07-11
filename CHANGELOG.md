@@ -1,3 +1,22 @@
+# [1.2.0](https://github.com/pustovitDmytro/code-chronicle/compare/v1.1.0...v1.2.0) (2021-07-11)
+
+
+### Chore
+
+* coverage for jsdoc parser (closes #3) ([68fa4ab](https://github.com/pustovitDmytro/code-chronicle/commit/68fa4abfe50b0134bc8427b0dca9e580252eaaf0)), closes [#3](https://github.com/pustovitDmytro/code-chronicle/issues/3)
+* fixes build test ([675f6fa](https://github.com/pustovitDmytro/code-chronicle/commit/675f6fa90b88f93df0a8158a87b31f1483228d77))
+* fixes package-test ([3ee2953](https://github.com/pustovitDmytro/code-chronicle/commit/3ee2953ecea675d16860d755e8ed96a131a5a75e))
+* increase coverage-check values ([632e1a7](https://github.com/pustovitDmytro/code-chronicle/commit/632e1a7ba200f6b87ecf0f83ec041a55b6be721d))
+* regenerate lock file ([1f49754](https://github.com/pustovitDmytro/code-chronicle/commit/1f4975470ee1fa5efc097fe294b9886578da32da))
+* Update dependency eslint-plugin-regexp to ^0.13.0 (#36) ([3a8d3ec](https://github.com/pustovitDmytro/code-chronicle/commit/3a8d3ecefa7c49575b4c6de6832690117d852dd7)), closes [#36](https://github.com/pustovitDmytro/code-chronicle/issues/36)
+* Update dependency eslint-plugin-sonarjs to ^0.9.0 ([81d9681](https://github.com/pustovitDmytro/code-chronicle/commit/81d9681ef601c70ee83a7ca26b199d647fc4ca0e))
+* Update dependency eslint-plugin-unicorn to v34 (#34) ([86efbac](https://github.com/pustovitDmytro/code-chronicle/commit/86efbac96c6fbd1055c7e83fc3a42a861836b943)), closes [#34](https://github.com/pustovitDmytro/code-chronicle/issues/34)
+* Update dependency husky to v7 ([3578711](https://github.com/pustovitDmytro/code-chronicle/commit/35787117161955387aad52949d506c0fbaf42edf))
+
+### New
+
+* adds handler for folder compile ([33c5b50](https://github.com/pustovitDmytro/code-chronicle/commit/33c5b50101d7f9e14b51b73117b0032e4f9e6b4d))
+
 # [1.1.0](https://github.com/pustovitDmytro/code-chronicle/compare/v1.0.2...v1.1.0) (2021-07-10)
 
 
