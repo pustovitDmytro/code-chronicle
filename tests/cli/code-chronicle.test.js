@@ -9,7 +9,7 @@ const factory = new Test();
 const filesFolder = path.resolve(testsRootFolder, 'files');
 const binPath = resolve('bin/code-chronicle.js');
 
-suite('cli: code-chronicle #no-pack');
+suite('cli: code-chronicle');
 
 before(async function () {
     await factory.setTmpFolder();
@@ -20,11 +20,10 @@ test('Positive: run cli on folder', async function () {
 
     const templatePath = path.join(filesFolder, 'templates');
     const resultPath = path.join(tmpFolder, 'cli_out');
-    const command = [ `${binPath} -c "${configPath}" ${templatePath} ${resultPath}` ];
+    const command = [ `${binPath} -c "${configPath}" ${templatePath} ${resultPath}`, `--root ${filesFolder}` ];
     const execArgs = {};
 
-    if (isTranspiled) execArgs.cwd = resultPath;
-    else command.push(`--root ${filesFolder}`);
+    if (isTranspiled) execArgs.cwd = filesFolder;
 
     await CLITester(command, execArgs);
 
@@ -39,11 +38,11 @@ test('Negative: config not exists', async function () {
 
     const templatePath = path.join(filesFolder, 'templates');
     const resultPath = path.join(tmpFolder, 'cli_out');
-    const command = [ `${binPath} -c "${configPath}" ${templatePath} ${resultPath}` ];
+    const command = [ `${binPath} -c "${configPath}" ${templatePath} ${resultPath}`, `--root ${filesFolder}` ];
     const execArgs = {};
 
-    if (isTranspiled) execArgs.cwd = resultPath;
-    else command.push(`--root ${filesFolder}`);
+    if (isTranspiled) execArgs.cwd = filesFolder;
+
     try {
         await CLITester(command, execArgs);
         assert.fail('expected to fail');
