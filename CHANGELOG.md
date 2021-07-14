@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/pustovitDmytro/code-chronicle/compare/v1.2.0...v1.2.1) (2021-07-14)
+
+
+### Upgrade
+
+* Update dependency myrmidon to v1.5.8 (#10) ([30a48c1](https://github.com/pustovitDmytro/code-chronicle/commit/30a48c10dfe539f90deb54857a2c04161b065f34)), closes [#10](https://github.com/pustovitDmytro/code-chronicle/issues/10)
+
 # [1.2.0](https://github.com/pustovitDmytro/code-chronicle/compare/v1.1.0...v1.2.0) (2021-07-11)
 
 
