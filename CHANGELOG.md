@@ -1,3 +1,22 @@
+## [1.2.3](https://github.com/pustovitDmytro/code-chronicle/compare/v1.2.2...v1.2.3) (2021-07-23)
+
+
+### Chore
+
+* adds 'typo' PR template ([e20404d](https://github.com/pustovitDmytro/code-chronicle/commit/e20404d5f844e87f38558d6986e31df4c214fc3f))
+* adds bump strategy for devDependencies (non-major) ([03c9587](https://github.com/pustovitDmytro/code-chronicle/commit/03c958728c482d04225d3368aebae8fadc7d6a4d))
+* adds CODE_OF_CONDUCT ([a969a8d](https://github.com/pustovitDmytro/code-chronicle/commit/a969a8d7c4b9ea8552ef90d21d1cbef068c9ee4c))
+* combine mine packages in renovate updates ([54c97b8](https://github.com/pustovitDmytro/code-chronicle/commit/54c97b8debfe5eae07fe83947378d03eaaea5763))
+* create auto pr for major dependencies ([d2583a6](https://github.com/pustovitDmytro/code-chronicle/commit/d2583a6277808bbd2aa5ec69dbd1639c10458c9a))
+* enhance own updates commit messages ([49a2365](https://github.com/pustovitDmytro/code-chronicle/commit/49a2365c0a49363e42365503939b98819a6c1864))
+* fixes renovate config ([982abaf](https://github.com/pustovitDmytro/code-chronicle/commit/982abaf61a98de14dadc2fcb8b37b854577cbc64))
+* Lock file maintenance ([964f097](https://github.com/pustovitDmytro/code-chronicle/commit/964f097d05cae81da831a1a2f1e66042944effa7))
+* not allow to fail on node 16 ([22ed683](https://github.com/pustovitDmytro/code-chronicle/commit/22ed683ace773b242382c094b363a1713f9d8352))
+
+### Upgrade
+
+* Update dependency @babel/parser to v7.14.8 ([bac6849](https://github.com/pustovitDmytro/code-chronicle/commit/bac6849f90c69ce8094e6bc06b5b86dd67b65dbd))
+
 ## [1.2.2](https://github.com/pustovitDmytro/code-chronicle/compare/v1.2.1...v1.2.2) (2021-07-18)
 
 
