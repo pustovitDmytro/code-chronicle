@@ -7,7 +7,7 @@ import remark from 'remark';
 import toc from 'remark-toc';
 import { groupBy } from 'myrmidon';
 import { parse } from '@babel/parser';
-import globby from 'globby';
+import { globby } from 'globby';
 import { getTemplate } from './handlebars';
 import { dumpTest, dumpDoc, getFiles, getGitCommit, safeReadJSON, extractJSDOC } from './utils';
 
