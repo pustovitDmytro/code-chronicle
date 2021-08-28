@@ -1,11 +1,11 @@
 import path from 'path';
 import { assert } from 'chai';
 import fs from 'fs-extra';
-import { load } from '../utils';
-import { testsRootFolder, tmpFolder } from '../constants';
+import { load } from '../utils.js';
+import { testsRootFolder, tmpFolder } from '../constants.js';
 import Test from '../Test';
 
-const { getGitCommit } = load('utils/gitUtils');
+const { getGitCommit } = load('utils.js/gitUtils');
 const factory = new Test();
 const tmpRepoDir = path.join(tmpFolder, 'repo');
 

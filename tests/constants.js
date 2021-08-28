@@ -1,4 +1,8 @@
+import { fileURLToPath } from 'url';
 import path from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const isBuild = process.env.BUILD && [ '1', 'true' ].includes(process.env.BUILD);
 const entry = process.env.ENTRY && path.resolve(process.env.ENTRY)

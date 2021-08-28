@@ -1,11 +1,11 @@
 /* eslint-disable import/no-commonjs */
-const { Module } = require('module');
-const path = require('path');
+import { Module } from  'module';
+import path from 'path';
 
 function clearRequireCache() {
-    for (const key of Object.keys(require.cache)) {
-        delete require.cache[key];
-    }
+    // for (const key of Object.keys(require.cache)) {
+    //     delete require.cache[key];
+    // }
 }
 
 function isPathInside(childPath, parentPath) {

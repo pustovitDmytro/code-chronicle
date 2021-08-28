@@ -1,5 +1,5 @@
 import { assert } from 'chai';
-import { load } from '../utils';
+import { load } from '../utils.js';
 import toArrayAST from '../files/jsdoc/function-toArray.ast.json';
 import toArrayJSDOC from '../files/jsdoc/function-toArray.jsdoc.json';
 import uniqueIdFilterAST from '../files/jsdoc/const-uniqueIdFilter.ast.json';
@@ -8,7 +8,7 @@ import fillAST from '../files/jsdoc/todo-fill.ast.json';
 import fillJSDOC from '../files/jsdoc/todo-fill.jsdoc.json';
 import unparsableAST from '../files/jsdoc/unparsable.ast.json';
 
-const { extractJSDOC } = load('utils/jsdocUtils');
+const { extractJSDOC } = load('utils.js/jsdocUtils');
 
 suite('jsdocUtils');
 

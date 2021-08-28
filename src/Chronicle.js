@@ -5,11 +5,11 @@ import { CLIEngine } from 'eslint';
 import recommended from 'remark-preset-lint-recommended';
 import remark from 'remark';
 import toc from 'remark-toc';
+import { globby } from 'globby';
 import { groupBy } from 'myrmidon';
 import { parse } from '@babel/parser';
-import { globby } from 'globby';
-import { getTemplate } from './handlebars';
-import { dumpTest, dumpDoc, getFiles, getGitCommit, safeReadJSON, extractJSDOC } from './utils';
+import { getTemplate } from './handlebars.js';
+import { dumpTest, dumpDoc, getFiles, getGitCommit, safeReadJSON, extractJSDOC } from './utils/index.js';
 
 export default class Chronicle {
     constructor({ info, examples, root, entry }) {

@@ -3,6 +3,7 @@
   "version": "1.2.3",
   "description": "Keep code usage instructions",
   "main": "./lib",
+  "type": "module",
   "scripts": {
     "prepare": "npm run build:src && husky install",
     "build:src": "babel src --out-dir ./lib --copy-files",
@@ -32,7 +33,7 @@
     "url": "https://github.com/pustovitDmytro/code-chronicle/issues"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=12.2"
   },
   "homepage": "https://github.com/pustovitDmytro/code-chronicle#readme",
   "devDependencies": {
@@ -74,6 +75,7 @@
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-sonarjs": "^0.9.0",
     "eslint-plugin-unicorn": "^34.0.0",
+    "esm": "^3.2.25",
     "husky": "^7.0.0",
     "jscpd": "^3.3.25",
     "lockfile-lint": "^4.6.2",
@@ -103,6 +105,6 @@
     "uuid": "8.3.2"
   },
   "peerDependencies": {
-    "eslint": ">= 7"
+    "eslint": "^7.31.0"
   }
 }

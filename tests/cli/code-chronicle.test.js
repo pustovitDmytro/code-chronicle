@@ -1,9 +1,9 @@
 import path from 'path';
 import fs from 'fs-extra';
 import { assert } from 'chai';
-import Test from '../Test';
-import { testsRootFolder, tmpFolder, isTranspiled } from '../constants';
-import { resolve, CLITester } from '../utils';
+import Test from '../Test.js';
+import { testsRootFolder, tmpFolder, isTranspiled } from '../constants.js';
+import { resolve, CLITester } from '../utils.js';
 
 const factory = new Test();
 const filesFolder = path.resolve(testsRootFolder, 'files');

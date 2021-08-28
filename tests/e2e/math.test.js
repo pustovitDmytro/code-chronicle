@@ -4,8 +4,8 @@ import { exec } from 'child_process';
 import { assert } from 'chai';
 import Mocha from 'mocha';
 import fs from 'fs-extra';
-import { testsRootFolder, tmpFolder, isTranspiled } from '../constants';
-import { resolve } from '../utils';
+import { testsRootFolder, tmpFolder, isTranspiled } from '../constants.js';
+import { resolve } from '../utils.js';
 
 const execAsync = promisify(exec);
 const mocha = new Mocha({

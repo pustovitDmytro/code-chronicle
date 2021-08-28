@@ -1,4 +1,4 @@
-export * from './gitUtils';
-export * from './fileUtils';
+export * from './gitUtils.js';
+export * from './fileUtils.js';
 export * from './dumpUtils.js';
-export * from './jsdocUtils';
+export * from './jsdocUtils.js';

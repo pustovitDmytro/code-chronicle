@@ -1,10 +1,10 @@
 import path from 'path';
 import { assert } from 'chai';
-import { load } from '../utils';
+import { load } from '../utils.js';
 import seedJSON from '../files/seed.json';
-import { testsRootFolder } from '../constants';
+import { testsRootFolder } from '../constants.js';
 
-const { getFiles, safeReadJSON } = load('utils/fileUtils');
+const { getFiles, safeReadJSON } = load('utils.js/fileUtils');
 
 suite('fileUtils');
 

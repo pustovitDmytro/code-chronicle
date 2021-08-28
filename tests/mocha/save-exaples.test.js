@@ -1,5 +1,5 @@
 import { assert } from 'chai';
-import { load } from '../utils';
+import { load } from '../utils.js';
 
 const Mocha = load('Mocha').default;
 
