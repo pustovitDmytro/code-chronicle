@@ -1,3 +1,26 @@
+## [1.2.4](https://github.com/pustovitDmytro/code-chronicle/compare/v1.2.3...v1.2.4) (2021-08-28)
+
+
+### Chore
+
+* adds gitleaks to circle pipeline ([114946e](https://github.com/pustovitDmytro/code-chronicle/commit/114946e5b0a0ec0437929c5963e7efe258391b9e))
+* Lock file maintenance ([47bfacf](https://github.com/pustovitDmytro/code-chronicle/commit/47bfacf4e2ffe672c96345481ddfa6811d4d4d69))
+* Lock file maintenance ([19c2389](https://github.com/pustovitDmytro/code-chronicle/commit/19c23891056afb813e4dde92e7f40f0905896bc9))
+* Lock file maintenance ([2b00aec](https://github.com/pustovitDmytro/code-chronicle/commit/2b00aec84097bd21c51a43ab785225798753dbae))
+* Lock file maintenance ([dea06c9](https://github.com/pustovitDmytro/code-chronicle/commit/dea06c9d3e2dd4448e997ee081425b1a765fae87))
+* Lock file maintenance ([0292fb9](https://github.com/pustovitDmytro/code-chronicle/commit/0292fb9be46e71518a8d1b55a54cfd67817ef61f))
+* Lock file maintenance ([e0043d8](https://github.com/pustovitDmytro/code-chronicle/commit/e0043d89de5576939e701f567ab1a871c2c8a057))
+* Lock file maintenance ([cc23257](https://github.com/pustovitDmytro/code-chronicle/commit/cc2325737aac37942b129bc4a933bb7e60c8c51e))
+* Lock file maintenance ([5d305a8](https://github.com/pustovitDmytro/code-chronicle/commit/5d305a8337cccbb1efcb4885805960941f40b143))
+* Lock file maintenance (#20) ([47d6fc3](https://github.com/pustovitDmytro/code-chronicle/commit/47d6fc3865961a79a60c14d1387a1b1ed50a0722)), closes [#20](https://github.com/pustovitDmytro/code-chronicle/issues/20)
+* Update devDependencies (non-major) ([33211c3](https://github.com/pustovitDmytro/code-chronicle/commit/33211c31d168fc187eb028f92eaeeff48ccfd085))
+* Update devDependencies (non-major) to v13 ([6894ad9](https://github.com/pustovitDmytro/code-chronicle/commit/6894ad97aeac91f931506c360822f81c861e2e83))
+* Update devDependencies (non-major) to v13 ([74fc731](https://github.com/pustovitDmytro/code-chronicle/commit/74fc73104c20787c8d8364c1894e99b047bc7ac4))
+
+### Upgrade
+
+* Update dependency @babel/parser to v7.15.3 ([000060b](https://github.com/pustovitDmytro/code-chronicle/commit/000060b2875cc9999cf0a6913466c3b8cea55cfb))
+
 ## [1.2.3](https://github.com/pustovitDmytro/code-chronicle/compare/v1.2.2...v1.2.3) (2021-07-23)
 
 
