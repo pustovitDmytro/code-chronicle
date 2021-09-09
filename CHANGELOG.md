@@ -1,3 +1,15 @@
+## [1.2.5](https://github.com/pustovitDmytro/code-chronicle/compare/v1.2.4...v1.2.5) (2021-09-09)
+
+
+### Chore
+
+* Update devDependencies (non-major) ([fb24568](https://github.com/pustovitDmytro/code-chronicle/commit/fb2456894fd80bb6831a07943af2973ab6557095))
+* Update devDependencies (non-major) ([2144d9c](https://github.com/pustovitDmytro/code-chronicle/commit/2144d9c57dec694c522ae319ca9e566e1b61c01a))
+
+### Upgrade
+
+* Update dependency @babel/parser to v7.15.5 (#23) ([cdfd187](https://github.com/pustovitDmytro/code-chronicle/commit/cdfd187bb57d18be4a47f92fb1806ae6889d0493)), closes [#23](https://github.com/pustovitDmytro/code-chronicle/issues/23)
+
 ## [1.2.4](https://github.com/pustovitDmytro/code-chronicle/compare/v1.2.3...v1.2.4) (2021-08-28)
 
 
