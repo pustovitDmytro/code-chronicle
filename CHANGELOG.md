@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/pustovitDmytro/code-chronicle/compare/v1.2.5...v1.2.6) (2021-09-13)
+
+
+### Upgrade
+
+* Update dependency @babel/parser to v7.15.6 ([a3c94b7](https://github.com/pustovitDmytro/code-chronicle/commit/a3c94b77c61c36761c0c3c8b692b833e07c3abe2))
+
 ## [1.2.5](https://github.com/pustovitDmytro/code-chronicle/compare/v1.2.4...v1.2.5) (2021-09-09)
 
 
