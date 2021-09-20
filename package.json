@@ -86,7 +86,7 @@
     "semantic-release-telegram": "^1.2.14"
   },
   "dependencies": {
-    "@babel/parser": "7.15.6",
+    "@babel/parser": "7.15.7",
     "chai": "4.3.4",
     "cls-hooked": "4.2.2",
     "docopt": "0.6.2",
