@@ -1,3 +1,17 @@
+## [1.2.7](https://github.com/pustovitDmytro/code-chronicle/compare/v1.2.6...v1.2.7) (2021-09-21)
+
+
+### Chore
+
+* Lock file maintenance ([da9f139](https://github.com/pustovitDmytro/code-chronicle/commit/da9f1397756caad1d5d82ee74a2dca8a0312bc67))
+* Lock file maintenance ([21c1165](https://github.com/pustovitDmytro/code-chronicle/commit/21c11654a09bca3c37f7c4fcdf5c62f6e1480071))
+* Lock file maintenance ([a8a9c00](https://github.com/pustovitDmytro/code-chronicle/commit/a8a9c008527cc5ecc7ff176426c01c453ad93d52))
+* Lock file maintenance ([7314635](https://github.com/pustovitDmytro/code-chronicle/commit/73146352779e36a62f46a7f9ee95c342ecea6ef7))
+
+### Upgrade
+
+* Update dependency @babel/parser to v7.15.7 ([6c19c3d](https://github.com/pustovitDmytro/code-chronicle/commit/6c19c3d55b88d6b89cc36e949e87b4453dcbcc5a))
+
 ## [1.2.6](https://github.com/pustovitDmytro/code-chronicle/compare/v1.2.5...v1.2.6) (2021-09-13)
 
 
