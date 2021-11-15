@@ -2,7 +2,7 @@
 import { isArray, isObject, flatten } from 'myrmidon';
 import doctrine from 'doctrine';
 
-const astParsable = new Set([ 'ExportNamedDeclaration' ]);
+const astParsable = new Set([ 'ExportNamedDeclaration', 'ExportDefaultDeclaration' ]);
 const techCommentPatterns = [ 'TODO:', 'eslint-disable' ];
 
 const TYPES = {

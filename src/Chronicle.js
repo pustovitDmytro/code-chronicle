@@ -12,9 +12,9 @@ import { getTemplate } from './handlebars';
 import { dumpTest, dumpDoc, getFiles, getGitCommit, safeReadJSON, extractJSDOC } from './utils';
 
 export default class Chronicle {
-    constructor({ info, examples, root, entry }) {
+    constructor({ info, examples, root, entry, hooks }) {
         this.root = path.resolve(root);
-        this.examples = {
+        this.examples = examples && {
             tmpPath      : path.resolve(this.root, examples.tmpPath),
             templatePath : path.resolve(this.root, examples.templatePath),
             eslint       : !!examples.eslint
@@ -23,6 +23,11 @@ export default class Chronicle {
         this.descriptions = {};
         this.entry = entry.map(p => path.resolve(this.root, p));
         this.tests = path.resolve(this.root, 'tests');
+        this.hooks = hooks
+            // eslint-disable-next-line security/detect-non-literal-require
+            ? require(path.resolve(this.root, hooks))
+            : {};
+
         this._ready = this.init(info);
     }
 
@@ -58,6 +63,7 @@ export default class Chronicle {
             const bb = parse(content.toString(), {
                 sourceType : 'module'
             });
+
             const jsdoc = extractJSDOC(bb);
 
             docs.push(
@@ -68,8 +74,7 @@ export default class Chronicle {
                 )
             );
         }));
-
-        const cases = await this.prepareExamples();
+        const cases = this.examples ? await this.prepareExamples() : [];
         const tests = await getFiles(this.tests);
         const relativeTestFiles = tests.map(f => path.relative(process.cwd(), f).trim());
 
@@ -96,6 +101,10 @@ export default class Chronicle {
                     })
                 };
             });
+
+        if (this.hooks.onSection) {
+            await Promise.all(sections.map(s => this.hooks.onSection(s)));
+        }
 
         const template = getTemplate(templatePath);
         const commit = await getGitCommit(this.root);

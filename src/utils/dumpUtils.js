@@ -24,7 +24,10 @@ export function dumpDoc(d, { file }) {
         returns : dumpParam(d.tags.find(t => t.title === 'returns')),
 
         file,
-        position : d.loc.start.line
+        position : d.loc.start.line,
+
+        // eslint-disable-next-line unicorn/no-array-reduce
+        tags : d.tags.reduce((prev, curr) => ({ ...prev, [curr.title]: curr.description }), {})
     };
 }
 
