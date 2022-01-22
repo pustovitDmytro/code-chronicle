@@ -19,6 +19,13 @@
     "sort-deps": "npm remove --save example; npm remove --save-dev example",
     "semantic-release": "npx semantic-release"
   },
+  "keywords": [
+    "documentation",
+    "code",
+    "annotations",
+    "automation",
+    "jsdoc"
+  ],
   "bin": {
     "code-chronicle": "lib/bin/code-chronicle.js"
   },
@@ -78,8 +85,8 @@
     "mocha-junit-reporter": "^2.0.0",
     "node-package-tester": "^1.1.24",
     "nyc": "^15.1.0",
-    "semantic-release": "^18.0.0",
-    "semantic-release-telegram": "^1.2.16"
+    "semantic-release": "^19.0.2",
+    "semantic-release-telegram": "^1.5.0"
   },
   "dependencies": {
     "@babel/parser": "7.15.7",

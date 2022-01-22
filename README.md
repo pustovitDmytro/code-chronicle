@@ -28,14 +28,14 @@ Keep code usage instructions.
   - [Contribute](#contribute)
 
 ## Requirements
-[![Platform Status][appveyor-badge]][appveyor-url]
+[![Platform Status][node-ver-test-badge]][node-ver-test-url]
 
 To use library you need to have [node](https://nodejs.org) and [npm](https://www.npmjs.com) installed in your machine:
 
 * node `>=10`
 * npm `>=6`
 
-Package is [continuously tested][appveyor-url] on darwin, linux, win32 platforms. All active and maintenance [LTS](https://nodejs.org/en/about/releases/) node releases are supported.
+Package is [continuously tested][node-ver-test-url] on darwin, linux and win32 platforms. All active and maintenance [LTS](https://nodejs.org/en/about/releases/) node releases are supported.
 
 ## Installation
 
@@ -56,7 +56,7 @@ Make the changes to the code and tests. Then commit to your branch. Be sure to f
 [npm]: https://www.npmjs.com/package/code-chronicle
 [github]: https://github.com/pustovitDmytro/code-chronicle
 [coveralls]: https://coveralls.io/github/pustovitDmytro/code-chronicle?branch=master
-[badge-deps]: https://img.shields.io/david/pustovitDmytro/code-chronicle.svg
+[badge-deps]: https://img.shields.io/librariesio/release/npm/code-chronicle.svg
 [badge-vers]: https://img.shields.io/npm/v/code-chronicle.svg
 [badge-lic]: https://img.shields.io/github/license/pustovitDmytro/code-chronicle.svg
 [badge-coverage]: https://coveralls.io/repos/github/pustovitDmytro/code-chronicle/badge.svg?branch=master
@@ -92,8 +92,8 @@ Make the changes to the code and tests. Then commit to your branch. Be sure to f
 [npm-size-badge]: https://img.shields.io/bundlephobia/min/code-chronicle
 [npm-size-url]: https://bundlephobia.com/result?p=code-chronicle
 
-[appveyor-badge]: https://ci.appveyor.com/api/projects/status/lik73h3vxd7687pr/branch/master?svg=true
-[appveyor-url]: https://ci.appveyor.com/project/pustovitDmytro/code-chronicle/branch/master
+[node-ver-test-badge]: https://github.com/pustovitDmytro/code-chronicle/actions/workflows/npt.yml/badge.svg?branch=master
+[node-ver-test-url]: https://github.com/pustovitDmytro/code-chronicle/actions?query=workflow%3A%22Node.js+versions%22
 
 [fossa-badge]: https://app.fossa.com/api/projects/custom%2B24828%2Fcode-chronicle.svg?type=shield
 [fossa-url]: https://app.fossa.com/projects/custom%2B24828%2Fcode-chronicle?ref=badge_shield
