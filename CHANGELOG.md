@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/pustovitDmytro/code-chronicle/compare/v1.3.1...v1.3.2) (2022-01-24)
+
+
+### Upgrade
+
+* Update dependency globby to v11.1.0 (#52) ([2167fde](https://github.com/pustovitDmytro/code-chronicle/commit/2167fdebf8a3dab93e22c21108ab30681125d5aa)), closes [#52](https://github.com/pustovitDmytro/code-chronicle/issues/52)
+
 ## [1.3.1](https://github.com/pustovitDmytro/code-chronicle/compare/v1.3.0...v1.3.1) (2022-01-22)
 
 
