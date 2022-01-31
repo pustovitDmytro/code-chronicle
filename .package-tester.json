@@ -1,5 +1,6 @@
 {
     "dir": "tmp/package-tests",
+    "modules": [ { "name": "eslint", "legacy": "^7.32.0"} ],
     "copy": [
         ["examples", "examples"],
         ["tests/files", "files"]
