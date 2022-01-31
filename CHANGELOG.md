@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/pustovitDmytro/code-chronicle/compare/v1.3.4...v1.3.5) (2022-01-31)
+
+
+### Upgrade
+
+* Update dependency chai to v4.3.6 (#58) ([9852011](https://github.com/pustovitDmytro/code-chronicle/commit/9852011908e9c8e4061856e9a4674d10154015a3)), closes [#58](https://github.com/pustovitDmytro/code-chronicle/issues/58)
+
 ## [1.3.4](https://github.com/pustovitDmytro/code-chronicle/compare/v1.3.3...v1.3.4) (2022-01-28)
 
 
