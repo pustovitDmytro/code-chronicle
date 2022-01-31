@@ -90,7 +90,7 @@
   },
   "dependencies": {
     "@babel/parser": "7.16.12",
-    "chai": "4.3.4",
+    "chai": "4.3.6",
     "cls-hooked": "4.2.2",
     "docopt": "0.6.2",
     "doctrine": "3.0.0",
