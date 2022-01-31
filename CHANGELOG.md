@@ -1,3 +1,10 @@
+## [1.3.6](https://github.com/pustovitDmytro/code-chronicle/compare/v1.3.5...v1.3.6) (2022-01-31)
+
+
+### Fix
+
+* limit legacy eslint version to v.7. fixes #57 ([137735c](https://github.com/pustovitDmytro/code-chronicle/commit/137735c5a22800c7316474a6e089d6f6a0ae4399)), closes [#57](https://github.com/pustovitDmytro/code-chronicle/issues/57)
+
 ## [1.3.5](https://github.com/pustovitDmytro/code-chronicle/compare/v1.3.4...v1.3.5) (2022-01-31)
 
 
