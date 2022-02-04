@@ -1,3 +1,14 @@
+## [1.3.7](https://github.com/pustovitDmytro/code-chronicle/compare/v1.3.6...v1.3.7) (2022-02-04)
+
+
+### Chore
+
+* skip npt for cli tests ([dc5de26](https://github.com/pustovitDmytro/code-chronicle/commit/dc5de26741b9229cd58d17b5bd9e2acc37856597))
+
+### Upgrade
+
+* Update dependency myrmidon to v1.7.2 ([48d49bd](https://github.com/pustovitDmytro/code-chronicle/commit/48d49bd5c5eef38c1a28ba646d9a5604f641159b))
+
 ## [1.3.6](https://github.com/pustovitDmytro/code-chronicle/compare/v1.3.5...v1.3.6) (2022-01-31)
 
 
