@@ -9,7 +9,7 @@ const factory = new Test();
 const filesFolder = path.resolve(testsRootFolder, 'files');
 const binPath = resolve('bin/code-chronicle.js');
 
-suite('cli: code-chronicle #no-pack'); //TODO: add windows test
+suite('cli: code-chronicle #no-pack'); // TODO: add windows test
 
 before(async function () {
     await factory.setTmpFolder();
