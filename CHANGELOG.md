@@ -1,3 +1,15 @@
+## [1.3.8](https://github.com/pustovitDmytro/code-chronicle/compare/v1.3.7...v1.3.8) (2022-02-06)
+
+
+### Chore
+
+* fixes lint ([3abe880](https://github.com/pustovitDmytro/code-chronicle/commit/3abe880999f1da3cb4abcae50ad121a94addd71c))
+* fixes some npm audit vulnerabilities (#61) ([bec2f3b](https://github.com/pustovitDmytro/code-chronicle/commit/bec2f3bdab41f797ee814fe3e06e4b91440da65a)), closes [#61](https://github.com/pustovitDmytro/code-chronicle/issues/61)
+
+### Upgrade
+
+* Update dependency @babel/parser to v7.17.0 (#63) ([537b587](https://github.com/pustovitDmytro/code-chronicle/commit/537b587e3231b69cf84497ac484725d1381f83fc)), closes [#63](https://github.com/pustovitDmytro/code-chronicle/issues/63)
+
 ## [1.3.7](https://github.com/pustovitDmytro/code-chronicle/compare/v1.3.6...v1.3.7) (2022-02-04)
 
 
