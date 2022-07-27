@@ -8,7 +8,7 @@ import toc from 'remark-toc';
 import { groupBy } from 'myrmidon';
 import { parse } from '@babel/parser';
 import globby from 'globby';
-import { getTemplate } from './handlebars';
+import HandleBars, { getTemplate } from './handlebars';
 import { dumpTest, dumpDoc, getFiles, getGitCommit, safeReadJSON, extractJSDOC } from './utils';
 
 export default class Chronicle {
@@ -35,6 +35,10 @@ export default class Chronicle {
         this.info = info || await safeReadJSON(
             path.join(this.root, 'package.json')
         );
+
+        if (this.hooks.handlebars) {
+            this.hooks.handlebars(HandleBars);
+        }
     }
 
     async prepareExamples() {
