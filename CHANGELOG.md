@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/pustovitDmytro/code-chronicle/compare/v1.5.0...v1.5.1) (2022-07-27)
+
+
+### Fix
+
+* add file to dumpTest ([2669af9](https://github.com/pustovitDmytro/code-chronicle/commit/2669af94be1cdd7db0a6fa93faff9e5370a82afd))
+
 # [1.5.0](https://github.com/pustovitDmytro/code-chronicle/compare/v1.4.0...v1.5.0) (2022-07-27)
 
 
