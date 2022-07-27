@@ -1,4 +1,9 @@
+{{#more helpers.length 3}}
+import { {{join helpers ',\n'}} } from '{{info.name}}';
+{{/more}}
+{{#less helpers.length 4}}
 import { {{join helpers ' , '}} } from '{{info.name}}';
+{{/less}}
 
 {{#examples}}
     {{#is this.type 'FunctionTester'}}

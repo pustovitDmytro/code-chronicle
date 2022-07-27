@@ -92,15 +92,13 @@ export default class Chronicle {
                     id     : fileName,
                     description,
                     values : val.map(v => {
-                        const examples = cases
-                            .filter(c => c.helpers.includes(v.name));
-                        const testFile = relativeTestFiles
-                            .find(f => f === path.join('tests', 'helpers', fileName, `${v.name}.test.js`));
+                        const filterExamples = this.hooks.filterExamples
+                            ? this.hooks.filterExamples(v, cases, { fileName, tests: relativeTestFiles })
+                            : { examples: [], testFiles: [] };
 
                         return {
                             ...v,
-                            testFile,
-                            examples
+                            ...filterExamples
                         };
                     })
                 };

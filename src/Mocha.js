@@ -53,6 +53,7 @@ export default class Mocha {
                 testID : currentTest._TRACE_ID,
                 test   : currentTest.title,
                 suite  : currentTest.parent.title,
+                file   : currentTest.file,
                 examples
             });
             await fs.ensureDir(path.dirname(this.examplesPath));

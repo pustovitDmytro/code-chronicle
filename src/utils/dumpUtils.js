@@ -1,4 +1,4 @@
-import { uniqueIdenticFilter, flatten } from 'myrmidon';
+import { uniqueIdenticFilter, flatten, toArray } from 'myrmidon';
 
 export function dumpParam(p) {
     if (!p?.type) return null;
@@ -12,6 +12,16 @@ export function dumpParam(p) {
 
 
 export function dumpDoc(d, { file }) {
+    const tags = {};
+
+    for (const tag of d.tags) {
+        const tagName = tag.title;
+
+        tags[tagName] = tags[tagName]
+            ? [ ...toArray(tags[tagName]), tag.description ]
+            : tag.description;
+    }
+
     return {
         name        : d.name,
         type        : d.type,
@@ -26,8 +36,7 @@ export function dumpDoc(d, { file }) {
         file,
         position : d.loc.start.line,
 
-        // eslint-disable-next-line unicorn/no-array-reduce
-        tags : d.tags.reduce((prev, curr) => ({ ...prev, [curr.title]: curr.description }), {})
+        tags
     };
 }
 

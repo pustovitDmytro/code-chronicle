@@ -11,5 +11,6 @@
         "name": "math",
         "description": "Shows usage of code-chronicle package"
     },
-    "entry": [ "src/*.js" ]
+    "entry": [ "src/*.js" ],
+    "hooks": "hooks.js"
 }
