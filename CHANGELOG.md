@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/pustovitDmytro/code-chronicle/compare/v1.3.8...v1.4.0) (2022-07-27)
+
+
+### New
+
+* adds handlebars hook ([7d374c8](https://github.com/pustovitDmytro/code-chronicle/commit/7d374c8665ced92b430e409280ab34c30b378190))
+
 ## [1.3.8](https://github.com/pustovitDmytro/code-chronicle/compare/v1.3.7...v1.3.8) (2022-02-06)
 
 
