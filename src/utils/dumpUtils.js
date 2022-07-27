@@ -49,6 +49,7 @@ export function dumpTest(useCase) {
 
     return {
         helpers,
+        file     : useCase.file,
         type     : caseType.toLowerCase(),
         text     : caseText?.replace(/@\w+/g, ''),
         category : useCase.suite,
