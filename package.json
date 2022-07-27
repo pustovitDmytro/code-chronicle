@@ -1,6 +1,6 @@
 {
   "name": "code-chronicle",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Keep code usage instructions",
   "main": "./lib",
   "scripts": {

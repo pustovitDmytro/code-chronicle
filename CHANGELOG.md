@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/pustovitDmytro/code-chronicle/compare/v1.4.0...v1.5.0) (2022-07-27)
+
+
+### New
+
+* add examples hook ([d83bb18](https://github.com/pustovitDmytro/code-chronicle/commit/d83bb18adf78d56c5971ee245b796f3bbd64a934))
+
 # [1.4.0](https://github.com/pustovitDmytro/code-chronicle/compare/v1.3.8...v1.4.0) (2022-07-27)
 
 
