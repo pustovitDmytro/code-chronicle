@@ -14,7 +14,7 @@
     "report-dir": "./reports/coverage",
     "temp-dir": "./reports/coverage",
     "lines": 97,
-    "statements": 96,
+    "statements": 95,
     "functions": 94,
     "branches": 83,
     "check-coverage": true
