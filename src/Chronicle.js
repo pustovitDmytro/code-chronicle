@@ -1,7 +1,6 @@
 /* eslint-disable function-paren-newline */
 import path from 'path';
 import fs from 'fs-extra';
-import { CLIEngine } from 'eslint';
 import recommended from 'remark-preset-lint-recommended';
 import remark from 'remark';
 import toc from 'remark-toc';
@@ -9,7 +8,7 @@ import { groupBy } from 'myrmidon';
 import { parse } from '@babel/parser';
 import globby from 'globby';
 import HandleBars, { getTemplate } from './handlebars';
-import { dumpTest, dumpDoc, getFiles, getGitCommit, safeReadJSON, extractJSDOC } from './utils';
+import { dumpTest, dumpDoc, getFiles, getGitCommit, safeReadJSON, extractJSDOC, Linter } from './utils';
 
 export default class Chronicle {
     constructor({ info, examples, root, entry, hooks }) {
@@ -42,20 +41,22 @@ export default class Chronicle {
     }
 
     async prepareExamples() {
-        const eslint = this.examples.eslint && new CLIEngine({ fix: true });
+        const linter = this.examples.eslint && new Linter();
         const examples = await fs.readJSON(this.examples.tmpPath);
         const template = getTemplate(this.examples.templatePath);
+        const tests = examples.map(element => dumpTest(element));
 
-        return examples
-            .map((element) => dumpTest(element))
-            .map(data => {
-                const raw = template({ ...data, info: this.info });
-                const code =  eslint
-                    ? eslint.executeOnText(raw).results[0].output
+        return Promise.all(
+            tests.map(async data => {
+                const raw = template({ ...data,
+                    info : this.info });
+                const code = linter
+                    ? await linter.prettify(raw)
                     : raw;
 
                 return { ...data, code };
-            });
+            })
+        );
     }
 
     async build(templatePath, out) {
