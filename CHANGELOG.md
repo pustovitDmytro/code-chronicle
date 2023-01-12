@@ -1,3 +1,11 @@
+## [1.5.2](https://github.com/pustovitDmytro/code-chronicle/compare/v1.5.1...v1.5.2) (2023-01-12)
+
+
+### Fix
+
+* fixes eslint v8 incompartibility ([4ba082a](https://github.com/pustovitDmytro/code-chronicle/commit/4ba082afd1540a4d99280ebf0751b79c5c59f1fb))
+* fixes security dependencies ([3ac3159](https://github.com/pustovitDmytro/code-chronicle/commit/3ac31598bcc9ecab7114ce364e086dd1da0d09c4))
+
 ## [1.5.1](https://github.com/pustovitDmytro/code-chronicle/compare/v1.5.0...v1.5.1) (2022-07-27)
 
 
